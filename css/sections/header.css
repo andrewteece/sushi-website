@@ -7,7 +7,7 @@
     flex: 1;
     display: flex;
     position: relative;
-    padding: 1.25rem;
+    padding: 20px;
 }
 
 .header__logo--overlay {
@@ -24,16 +24,38 @@
     font-weight: 700;
     text-transform: uppercase;
     padding-left: 1.875rem;
-    color: var(--clr-netural-400);
+    color: var(--clr-neutral-400);
     opacity: 0.8;
 }
 
 .header__menu, .header__menu--mobile {
     display: flex;
-    flex: 1.24;
+    flex: 1.236;
     justify-content: flex-end;
     align-items: center;
     gap: 4rem;
-    padding: 1,25rem;
+    padding: 1.25rem;
     list-style: none;
+}
+
+.header__menu li {
+    font-family: var(--ff-sans);
+    font-size: var(--fs-base);
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--ff-sans);
+    line-height: 1.25rem;
+    cursor: pointer;
+}
+
+.header__menu li img {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+}
+
+.header__menu--mobile {
+    position: relative;
+    display: none;
+    gap: 1.25rem;
 }
