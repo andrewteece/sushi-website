@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
 
+/* CSS File Imports */
+
+@import url("sections/header.css");
+
 :root {
 
     --ff-serif: 'Playfair Display', serif;
@@ -20,6 +24,21 @@
     --fs-xxxl: 5rem;
     --fs-xxx-2: 5.5rem;
     --fs-xxxxl: 7.5rem;
+
+    --clr-primary: #b1454a;
+    --clr-secondary: #121212;
+    
+    --clr-black-400: #020202;
+    --clr-black-500: #1f1e31;
+    
+    --clr-gray-100: #888888;
+    --clr-gray-200: #555555;
+    --clr-gray-300: #333333;
+    
+
+    --clr-neutral-400: #ffffff;
+    --clr-accent-400: #fff8de;
+
 }
 
 /* CSS RESET */
@@ -61,7 +80,7 @@ body {
 }
 
 /* A elements that don't have a class get default styles */
-area {
+a {
     text-decoration: none;
     color: inherit;
   }
@@ -88,4 +107,54 @@ area {
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
     }
+  }
+
+  /* Global Styles */
+
+  body {
+    max-width: 80rem;
+    margin: 0 auto;
+    background-color: var(--clr-accent-400);
+  }
+
+  /* Utility Classes */
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main__title {
+    font-family: var(--ff-serif);
+    font-size: var(--fs-xl-3);
+    font-weight: 600;
+    color: var(--clr-secondary);
+    margin-top: 1rem;
+  }
+
+  .main__subtitle {
+    font-family: var(--ff-sans);
+    font-size: var(--fs-base-2);
+    font-weight: 400;
+    color: var(--clr-primary);
+    opacity: 0.8;
+    letter-spacing: -0.01em;
+  }
+
+  .main__description {
+    font-family: var(--ff-sans);
+    font-size: var(--fs-base-2);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 2.25rem;
+    color: var(--clr-secondary);
+    opacity: 0.8;
+    margin: 2rem 0rem;
   }

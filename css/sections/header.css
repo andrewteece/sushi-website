@@ -1,0 +1,31 @@
+@import url("/css/style.css");
+
+
+.header__nav {
+    display: flex;
+    overflow: hidden;
+}
+
+.header__logo {
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding: 1.25rem;
+}
+
+.header__logo--overlay {
+    position: absolute;
+    background-color: var(--clr-primary);
+    width: 100%;
+    inset: 0;
+    z-index: -1;
+}
+
+.header__logo h4 {
+    font-family: var(--ff-sans);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--clr-netural-400);
+    opacity: 0.8;
+}
