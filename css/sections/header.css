@@ -48,6 +48,13 @@
     cursor: pointer;
 }
 
+.header__menu li:hover,
+.header__menu li:focus {
+    color: var(--clr-primary);
+    transition: all 450ms ease-in-out;
+    border-bottom: 2px solid var(--clr-primary);
+}
+
 .header__menu li img {
     width: 1.5rem;
     height: 1.5rem;
