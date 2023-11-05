@@ -43,7 +43,7 @@
     font-size: var(--fs-base);
     font-weight: 400;
     text-transform: uppercase;
-    color: var(--ff-sans);
+    color: var(--clr-secondary);
     line-height: 1.25rem;
     cursor: pointer;
 }
