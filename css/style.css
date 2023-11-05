@@ -5,6 +5,7 @@
 
 @import url("sections/header.css");
 
+
 :root {
 
     --ff-serif: 'Playfair Display', serif;
@@ -158,3 +159,29 @@ a {
     opacity: 0.8;
     margin: 2rem 0rem;
   }
+
+  /* Header */
+
+
+
+.header__menu li {
+    font-family: var(--ff-sans);
+    font-size: var(--fs-base);
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--ff-sans);
+    line-height: 1.25rem;
+    cursor: pointer;
+}
+
+.header__menu li img {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+}
+
+.header__menu--mobile {
+    position: relative;
+    display: none;
+    gap: 1.25rem;
+}
