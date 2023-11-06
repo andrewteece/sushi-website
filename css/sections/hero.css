@@ -113,6 +113,14 @@
     cursor: pointer;
 }
 
+.hero__content--play-btn:hover,
+.hero__content--play-btn:focus {
+    outline: 1px solid var(--clr-black-400);
+    border-radius: 1rem;
+    padding: 0rem 1rem;
+    transition: all 400ms ease-in-out;
+}
+
 .hero__content--play-btn img {
     width: 2.875rem;
     width: 2.875rem;
@@ -126,8 +134,7 @@
     gap: 1.25rem;
     background: var(--clr-neutral-400);
     padding: 2rem 4rem;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    box-shadow: var(--shadow-elevation-high);
 }
 
 .hero__content--customer {
