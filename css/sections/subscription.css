@@ -11,9 +11,9 @@
   
   .subscription h2 {
     font-family: var(--ff-serif);
-    font-size: var(--fs-xxxxl);
+    font-size: var(--fs-xxx-2);
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.3;
     color: var(--clr-neutral-400);
     text-align: center;
   }
